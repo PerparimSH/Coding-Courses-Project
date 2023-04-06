@@ -1,0 +1,667 @@
+body {
+  background-color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+h2{
+  font-family: Arial, sans-serif;
+  color: #222;
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+ }
+
+
+/* header CSS */
+
+.main-header {
+  background-color: #333;
+  color: orange;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo img {
+  width: 50%;
+}
+
+
+.main-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+
+.main-menu li {
+  margin: 10px;
+}
+
+
+.main-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 350;
+}
+
+.main-menu li:nth-child(6) a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 350;
+  border: 2px solid orange;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.main-menu li:nth-child(7) a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 350;
+  border: 2px solid orange;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.main-menu li:nth-child(6) a:hover {
+  color: orange;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-weight: 350;
+  text-decoration: none;
+}
+
+.main-menu li:nth-child(7) a:hover {
+  color: orange;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-weight: 350;
+  text-decoration: none;
+}
+
+.main-menu a:hover {
+  color: orange;
+  font-size: 20px;
+  font-weight: 350;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+
+/* Banner CSS */
+
+.banneri {
+  background-color: #FABA20;
+  color: #2A3030;
+  background-size: cover;
+  text-align: center;
+}
+
+
+/* About us CSS */
+
+.threeboxes {
+  border-top-right-radius: 100px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 10px;
+  border: inset orange;
+  margin-left: 5px;
+  margin-right: 5px;  
+}
+
+
+.box {
+  max-width: 25%;
+  padding: 11px;
+  border: 2.3px dotted orange;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 50px;
+}
+
+
+.box img {
+  max-width: 100%;
+}
+
+
+.box p {
+  font-size: 16px;
+  color: #222;
+}
+
+
+.box button {
+  display: block;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+.box button:hover {
+  color: orange;
+}  
+
+
+/* Contact CSS */
+
+.contact-form-container {
+  display: flex;
+  width: 100%;
+}
+
+
+.contact-form {
+  width: 50%;
+  padding: 20px;
+}
+
+
+.contact-form-info {
+  width: 50%;
+  text-align: center;
+  color: #222;
+}
+
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: orange;
+  margin: 50px;
+  padding: 3px;
+  border-radius: 20px;
+}
+
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  border: 2px solid orange;
+  border-radius: 25px;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+
+input, textarea {
+  display: block;
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+  background-color: white;
+	border: 1px dotted orange;
+	border-radius: 12px;
+  color: #222;
+}
+
+
+input:focus, textarea:focus {
+  background-color: orange;
+  outline: none;
+}
+
+
+input[type=text]::placeholder, input[type=email]::placeholder, textarea::placeholder {
+  color: #222;
+}
+
+
+form button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #222;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+form button:hover {
+  color: orange;
+}
+
+
+/* Footer CSS */
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 1px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+/* Scroll Top CSS */
+
+.TOP button {
+  position: fixed;
+  bottom: 5rem;
+  right: -2px;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: rgba(255, 165, 0, 0.5);
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  width: 3rem;
+}
+
+
+.TOP button:hover {
+  background-color: orange;
+}
+
+
+.TOP button .icon-circle-arrow-up {
+  font-size: 25px;
+  }
+
+
+  /* Prices CSS */
+
+  .boxesprices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+
+.basic, .proffesional, .premium {
+    width: 370px;
+    border-radius: 18px;
+    margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px double orange;
+  }
+  
+  
+.basic h3, .proffesional h3, .premium h3 {
+    font-size: 1.25rem;
+    font-family: "sans-serif";
+    font-weight: 700;
+    padding-top: 20px;
+  }
+
+  
+.basic h1, .proffesional h1, .premium h1 {
+    font-size: 2.875rem;
+    font-family: "sans-serif";
+    font-weight: 300;
+    margin-top: 25px;
+    color: orangered;
+  }
+  
+ 
+.basic p, .proffesional p, .premium p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+ 
+  
+.basic button, .proffesional button, .premium button {
+    background-color: #222;
+    border-radius: 35px;
+    padding-top: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 8px;   
+    margin-bottom: -20px;
+    color:  white;
+    border: 2px solid orange;
+    cursor: pointer;
+  }
+
+  
+.popup {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 4px solid orange;
+    backdrop-filter: blur(50px);
+  }
+  
+
+.popup button {
+    display: block;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 100px;
+    margin-top: 40px;
+  }
+
+
+.popup p {
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  color: #222;
+} 
+  
+  
+.popup h3 {
+    text-align: center;
+  }
+  
+
+.divipar, .dividyt, .divitret {
+    max-width: 30%;
+    display: inline-block;
+    margin: 25px;
+    text-align: center;
+  }
+  
+
+.divipar h1, .dividyt h1, .divitret h1{
+    text-decoration: underline;
+    text-decoration-color: orange;
+  }
+  
+
+.icon-money {
+    font-size: 3rem;
+    color: orange;
+  }
+  
+
+.icon-ok-circle {
+    font-size: 3rem;
+    color: orange;
+  }
+  
+  
+.icon-eur {
+    font-size: 3rem;
+    color: orange;
+  }
+
+
+.basic button:hover, .proffesional button:hover, .premium button:hover {
+  color: orange;
+}  
+
+
+/* Login Page CSS   */
+
+.loginpage {
+	max-width: 400px;
+	margin: 100px auto;
+	padding: 20px;
+  background-color: white;
+	border-radius: 10px;
+  border: 2px solid orange;
+}
+
+
+.loginpage h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+
+input[type="username"], input[type="password"] {
+	display: block;
+	width: 100%;
+  height: 50px;
+	padding: 10px;
+	margin-bottom: 20px;
+  background-color: white;
+	border: 1px dotted orange;
+	border-radius: 12px;
+  color: #222;
+}
+
+
+input[type="username"]:focus, input[type="password"]:focus {
+  background-color: #FABA20;
+}
+
+
+input[type=password]::placeholder, input[type=username]::placeholder {
+  color: #222;
+}
+
+
+input[type="submit"] {
+	background-color: #222;
+	color: white;
+	padding: 15px;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+  font-size: 20px;
+}
+
+
+input[type="submit"]:hover {
+  color: orange;
+}
+
+
+.loginpage p {
+  text-align: end;
+  margin-top: 30px;
+}
+
+
+.loginpage span {
+  color:#222;
+}
+
+
+.loginpage p a {
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+}
+
+
+.loginpage p a:hover {
+  text-decoration: underline;
+}
+
+
+.login-message {
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+  font-family: Calibri;
+}
+
+
+.login-message--success {
+  color: green;
+  background-color: lightgreen;
+}
+
+
+.login-message--error {
+  color: red;
+  background-color: lightcoral;
+}
+
+
+/* Register Page CSS */
+
+.register-message {
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+  font-family: Calibri;
+  color: green;
+  background-color: lightgreen;
+}
+
+
+.register-message2 {
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+  font-family: Calibri;
+  color: red;
+  background-color: lightcoral;
+}
+
+
+/* Accordion CSS */
+
+.accordion {
+  border-bottom: 3px solid #222;
+  border-top: 3px solid #222;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin: 10px;
+  background-color: #FABA20;
+}
+
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  cursor: pointer;
+}
+
+
+.accordion-header h3 {
+  color:#222;
+  font-weight: bold;
+}
+
+
+.arrow {
+  transition: transform 0.2s ease-in-out;
+}
+
+
+.open {
+  transform: rotate(180deg);
+}
+
+
+.accordion-content {
+  padding: 16px;
+}
+
+
+/* Dashboard CSS */
+
+.profile {
+  display: flex;
+  margin-top: 50px;
+  margin-top: 100px;
+  margin-bottom: 122px;
+  font-family: Arial, sans-serif;
+  margin-left: 50px;
+}
+
+.profile-header {
+  display: flex;
+  border: 4px double #222;
+  width: 30%;
+  flex-direction: column;
+  align-content: center;
+}
+
+.profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  padding-top: 20px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
+
+.profilii {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #222;
+}
+
+.profile p {
+  font-size: 16px;
+  text-align: center;
+  color: #222;
+}
+
+.about-me {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.about-me h2 {
+  font-size: 34px;
+  padding: 25px;
+  margin-bottom: 10px;
+  color: orange;
+}
+
+.about-me p {
+  font-size: 16px;
+  color: #222;
+}
