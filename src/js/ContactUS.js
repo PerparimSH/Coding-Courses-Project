@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 function ContactUS() {
-
   const [formValues, setFormValues] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
 
   const [showPopup, setShowPopup] = useState(false);
@@ -14,16 +13,16 @@ function ContactUS() {
     event.preventDefault();
     setShowPopup(true);
     setFormValues({
-      name: '',
-      email: '',
-      message: ''
+      name: "",
+      email: "",
+      message: "",
     });
-  }
+  };
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormValues({ ...formValues, [name]: value });
-  }
+  };
 
   useEffect(() => {
     if (showPopup) {
@@ -42,22 +41,45 @@ function ContactUS() {
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="name">Name:</label>
-              <input type="text" name="name" placeholder="Enter Your Name" required value={formValues.name} onChange={handleInputChange} />
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter Your Name"
+                required
+                value={formValues.name}
+                onChange={handleInputChange}
+              />
             </div>
             <div className="form-group">
               <label htmlFor="email">Email:</label>
-              <input type="email" name="email" placeholder="Enter Your Email" required value={formValues.email} onChange={handleInputChange} />
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter Your Email"
+                required
+                value={formValues.email}
+                onChange={handleInputChange}
+              />
             </div>
             <div className="form-group">
               <label htmlFor="message">Message:</label>
-              <textarea name="message" placeholder="Enter Your Message" required value={formValues.message} onChange={handleInputChange} ></textarea>
+              <textarea
+                name="message"
+                placeholder="Enter Your Message"
+                required
+                value={formValues.message}
+                onChange={handleInputChange}
+              ></textarea>
             </div>
             <br></br>
             <button type="submit">Submit</button>
           </form>
         </div>
         <div className="contact-form-info">
-          <img className="image-style" src="https://i.imgur.com/Wyh3mAC.png"></img>
+          <img
+            className="image-style"
+            src="https://i.imgur.com/Wyh3mAC.png"
+          ></img>
           <h2>Contact Us</h2>
           <p>Please fill out the form to get in touch with us.</p>
           <p>We will get back to you as soon as possible.</p>
