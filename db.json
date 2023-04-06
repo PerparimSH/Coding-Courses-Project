@@ -3,7 +3,6 @@
     {
       "username": "Perparim123",
       "password": "Perparim123",
-      "email": "Perparim@gmail.com",
       "id": 1
     },
     {
@@ -12,8 +11,8 @@
       "id": 2
     },
     {
-      "username": "kjasdas",
-      "password": "kjasdas123",
+      "username": "CodersLAB",
+      "password": "CodersLAB",
       "id": 3
     }
   ]
