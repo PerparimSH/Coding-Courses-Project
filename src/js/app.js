@@ -20,43 +20,43 @@ import Dashboard from "./Dashboard";
 import Register from "./Register";
 import Premium from "./Premium";
 
-
-
 const Wrapper = () => {
-  const user = JSON.parse(localStorage.getItem('user'));
+  const user = JSON.parse(localStorage.getItem("user"));
 
-    return (
-      <>
-        <Banner />
-        <AboutUS />
-        {user && <Premium /> }
-        <ContactUS />
-      </>
-    );
+  return (
+    <>
+      <Banner />
+      <AboutUS />
+      {user && <Premium />}
+      <ContactUS />
+    </>
+  );
+};
+
+const App = () => {
+  const handleLoginSuccess = () => {
+    // Do something after successful login
   };
-  
-  const App = () => {
-    const handleLoginSuccess = () => {
-        // Do something after successful login
-      };
-      
-    return (
-      <>
-        <HashRouter>
-          <Header />
-          <Routes>
-            <Route path="/" element={<Wrapper />} />
-            <Route path="/prices" element={<Prices />} />
-            <Route path="/login" element={<Login handleLoginSuccess={handleLoginSuccess} />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-          </Routes>
-        </HashRouter>
-        <TOP />
-        <Footer />
-      </>
-    );
-  };
-  
-  ReactDOM.render(<App />, document.getElementById("app"));
-  
+
+  return (
+    <>
+      <HashRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Wrapper />} />
+          <Route path="/prices" element={<Prices />} />
+          <Route
+            path="/login"
+            element={<Login handleLoginSuccess={handleLoginSuccess} />}
+          />
+          <Route path="/register" element={<Register />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
+      </HashRouter>
+      <TOP />
+      <Footer />
+    </>
+  );
+};
+
+ReactDOM.render(<App />, document.getElementById("app"));
