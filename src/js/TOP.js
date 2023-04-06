@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 function TOP() {
   const [showTopButton, setShowTopButton] = useState(false);
@@ -6,7 +6,7 @@ function TOP() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
 
@@ -14,7 +14,8 @@ function TOP() {
     const handleScroll = () => {
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
-      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      const scrollTop =
+        document.documentElement.scrollTop || document.body.scrollTop;
 
       if (scrollTop > windowHeight / 2) {
         setShowTopButton(true);
@@ -23,12 +24,12 @@ function TOP() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <div className='TOP'>
+    <div className="TOP">
       {showTopButton && (
         <button onClick={scrollToTop}>
           <i className="icon-circle-arrow-up"></i>
